@@ -33,7 +33,7 @@
 static CGFloat kDefaultBarHeight = 140;
 static CGFloat kDefaultBarWidth = 22;
 static CGFloat kDefaultBarMargin = 20;
-static CGFloat kDefaultLabelWidth = 40;
+static CGFloat kDefaultLabelWidth = 50;
 static CGFloat kDefaultLabelHeight = 15;
 
 static CGFloat kDefaultAnimationDuration = 2.0;
@@ -166,8 +166,8 @@ static CGFloat kDefaultAnimationDuration = 2.0;
         CGRect frame = CGRectMake(0, 0, kDefaultLabelWidth, kDefaultLabelHeight);
         UILabel *item = [[UILabel alloc] initWithFrame:frame];
         item.textAlignment = NSTextAlignmentCenter;
-        item.font = [UIFont boldSystemFontOfSize:12];
-        item.textColor = [UIColor lightGrayColor];
+        item.font = [UIFont boldSystemFontOfSize:13];
+        item.textColor = [UIColor grayColor];
         item.text = [self.dataSource titleForBarAtIndex:idx];
         
         [items addObject:item];
